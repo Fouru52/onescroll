@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+body {
+
+}
+
+header {
+  position: fixed;
+  background: rgba(255,255,255,50%);
+  width: 100%; /*쪼그라지지않게 지정*/
+  transition: 500ms ease-in;
+}
+
+.header_in{
+  max-width: 1240px;
+  margin: auto;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {}
+
+header h1 i {
+  font-size: 2.5em;
+  margin-right: 10px;
+}
+header i.fa-moon {
+  font-size: 1em;
+  margin-left: 5px;
+  vertical-align: top;
+}
+
+header h1 span{
+  font-size: 2em;
+  font-family: 'Pacifico', cursive;
+}
+
+header nav {}
+
+header nav ul {}
+
+header nav ul::after {
+  content: "";
+  clear: both;
+}
+
+header nav ul > li {
+  float: left;
+}
+
+header nav ul > li > a {
+  display: block;
+  padding: 15px;
+  font-size: 18px;
+}
+
+header nav ul > li > a:hover {
+  color: orange;
+}
+
+/* 스크롤 내리면 변경되는 부분*/
+header.on {
+  background: black;
+  color: #fff;
+}
+header.on .header_in {
+  height: 50px;
+}
+header.on h1 i {
+  font-size: 1.5em;
+}
+header.on h1 i.fa-moon{
+  font-size: 0.8em;
+  color: yellow;
+}
+header.on h1 span {
+  font-size: 1.5em;
+}
+header.on nav ul > li > a {
+  padding: 15px;
+  font-size: 14px;
+}
+
+
+
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btnDown {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+.btnDown span{
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 2px solid navy;
+  transform: rotate(-45deg);
+  border-top: none;
+  border-right: none;
+  font-size: 0;
+  overflow: hidden;
+  color: transparent;
+  transition: 200ms;
+}
+
+.btnDown:hover span {
+  border-color:red;
+  margin-top: 5px;
+  transition: 200ms;
+}
+
+section h2 {
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+
+#s1 { 
+  background: lightblue;
+  height: 100vh; /* 페이지가 넓든 적든 하나로 꽉 차게*/
+}
+#s2 { 
+  background: lightcoral ;
+  height: 768px;
+}
+#s3 { 
+  background: lightslategray ;
+  height: 1100px;
+
+}
+#s4 { 
+  background: lightskyblue;
+  height: 500px;
+
+}
+#s5 { 
+  background: lightpink;
+  height: 1300px;
+
+}
+#s6 { 
+  background: lightslategray;
+  height: 800px;
+}
